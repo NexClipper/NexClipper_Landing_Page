@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import NexLogo from '../Image/NexLogo.png';
 
 const Header = styled.header`
+  position: fixed;
   width: 100%;
   height: 50px;
 `;
