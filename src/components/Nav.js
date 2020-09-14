@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
-import { scrollToTop } from 'react-scroll/modules/mixins/animate-scroll';
 import styled from 'styled-components';
 import NexLogo from '../Image/NexLogo.png';
 
@@ -39,6 +38,7 @@ const LogoBox = styled.div`
 const MenuBox = styled.div`
   width: 500px;
   height: 100%;
+  margin-right: 10%;
 `;
 
 const MenuList = styled.ul`
