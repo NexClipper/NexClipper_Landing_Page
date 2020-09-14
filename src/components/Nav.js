@@ -38,7 +38,7 @@ const LogoBox = styled.div`
 const MenuBox = styled.div`
   width: 500px;
   height: 100%;
-  margin-right: 10%;
+  margin-right: 11%;
 `;
 
 const MenuList = styled.ul`
