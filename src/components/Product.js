@@ -6,6 +6,9 @@ const Container = styled.section`
   display: flex;
   width: 100%;
   height: 700px;
+  z-index: 1;
+  position: relative;
+  background-color: #fff;
 `;
 
 const TextContainer = styled.div`

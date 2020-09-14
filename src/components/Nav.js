@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import NexLogo from '../Image/NexLogo.png';
 
 const Header = styled.header`
   position: fixed;
+  z-index: 2;
   width: 100%;
   height: 50px;
 `;
@@ -72,6 +74,10 @@ const SignInBox = styled.div`
   color: #000066;
 `;
 
+const gotoSignIn = styled(Link)`
+  text-decoration: none;
+`;
+
 export default function Nav() {
   return (
     <Header>
@@ -90,7 +96,9 @@ export default function Nav() {
           </MenuList>
         </MenuBox>
         <SignInContain>
-          <SignInBox>Sign In</SignInBox>
+          <SignInBox>
+            <gotoSignIn to="">Sign In</gotoSignIn>
+          </SignInBox>
         </SignInContain>
       </Navigator>
     </Header>

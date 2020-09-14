@@ -10,6 +10,9 @@ const Container = styled.section`
   flex-direction: column;
   width: 100%;
   height: 700px;
+  z-index: 1;
+  position: relative;
+  background-color: #fff;
 `;
 
 const TextContainer = styled.div`

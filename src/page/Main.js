@@ -1,9 +1,9 @@
 import React from 'react';
-import Home from '../components/Home';
-import Whatwe from '../components/Whatwe';
-import Product from '../components/Product';
-import Manual from '../components/Manual';
 import Content from '../components/Content';
+import Home from '../components/Home';
+import Product from '../components/Product';
+import Whatwe from '../components/Whatwe';
+import Manual from '../components/Manual';
 
 export default function Main() {
   return (

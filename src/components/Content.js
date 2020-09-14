@@ -9,6 +9,9 @@ const Container = styled.section`
   align-items: center;
   width: 100%;
   height: 700px;
+  z-index: 1;
+  position: relative;
+  background-color: #fff;
 `;
 
 const AddrContainer = styled.div`

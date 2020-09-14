@@ -3,22 +3,22 @@ import styled from 'styled-components';
 import top_img from '../Image/top_img.png';
 
 const Container = styled.section`
-  overflow: hidden;
+  position: sticky;
+  z-index: 0;
   background-color: #000033;
   width: 100%;
   height: 750px;
+  top: 50px;
 `;
 
-const TextContent = styled.div`
-  margin-top: 100px;
-`;
+const TextContent = styled.div``;
 
 const TextBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 40px 0 30px 0;
+  padding: 40px 0 30px 0;
 `;
 
 const ImgContent = styled.div`

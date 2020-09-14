@@ -4,8 +4,11 @@ import k8s from '../Image/k8s.png';
 
 const Container = styled.section`
   display: flex;
+  z-index: 1;
   width: 100%;
   height: 700px;
+  position: relative;
+  background-color: #fff;
 `;
 
 const IconContainer = styled.div`
