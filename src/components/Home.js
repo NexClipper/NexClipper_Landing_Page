@@ -46,8 +46,8 @@ export default function Home() {
     <Container>
       <TextContent>
         <TextBox>
-          <MainText>Are you okay with your Kubersetes?</MainText>
-          <SubText>Kubersetes without Prometheus?</SubText>
+          <MainText>Are you okay with your Kubernetes?</MainText>
+          <SubText>Kubernetes without Prometheus?</SubText>
         </TextBox>
       </TextContent>
       <ImgContent>

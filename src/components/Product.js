@@ -48,9 +48,9 @@ const Title = styled.div`
   margin-bottom: 20px;
 `;
 
-export default function Product() {
+export default function Product({ id }) {
   return (
-    <Container>
+    <Container id={id}>
       <TextContainer>
         <TextBox>
           <Title>How to Work with NexClipper</Title>

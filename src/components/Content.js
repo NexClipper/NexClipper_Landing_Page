@@ -46,9 +46,9 @@ const Title = styled.div`
   margin-bottom: 20px;
 `;
 
-export default function Content() {
+export default function Content({ id }) {
   return (
-    <Container>
+    <Container id={id}>
       <AddrContainer>
         <AddrText>
           <Title>Content</Title>

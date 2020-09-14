@@ -44,9 +44,9 @@ const Title = styled.div`
   margin-bottom: 20px;
 `;
 
-export default function Whatwe() {
+export default function Whatwe({ id }) {
   return (
-    <Container>
+    <Container id={id}>
       <IconContainer>
         <IconBox>
           <img src={k8s} />

@@ -44,9 +44,9 @@ const Title = styled.div`
   margin-bottom: 20px;
 `;
 
-export default function Manual() {
+export default function Manual({ id }) {
   return (
-    <Container>
+    <Container id={id}>
       <TextContainer>
         <TextBox>
           <Title>User Manual</Title>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import { scrollToTop } from 'react-scroll/modules/mixins/animate-scroll';
 import styled from 'styled-components';
 import NexLogo from '../Image/NexLogo.png';
 
@@ -45,13 +46,13 @@ const MenuList = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  li {
-    display: inline;
-    color: #fff;
-    font-size: 17px;
-    font-weight: 500;
-    cursor: pointer;
-  }
+`;
+
+const MoveList = styled(Link)`
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
 `;
 
 const SignInContain = styled.div`
@@ -69,35 +70,82 @@ const SignInBox = styled.div`
   height: 30px;
   background-color: #fff;
   border-radius: 25px;
-  font-size: 17px;
-  font-weight: bold;
-  color: #000066;
-`;
-
-const gotoSignIn = styled(Link)`
-  text-decoration: none;
+  a {
+    text-decoration: none;
+    color: #000066;
+    font-size: 15px;
+    font-weight: bold;
+  }
 `;
 
 export default function Nav() {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <Header>
       <Navigator>
         <LogoContainer>
-          <LogoBox>
+          <LogoBox onClick={scrollToTop}>
             <img src={NexLogo} />
           </LogoBox>
         </LogoContainer>
         <MenuBox>
           <MenuList>
-            <li>What we're</li>
-            <li>Product</li>
-            <li>Manual</li>
-            <li>Contact</li>
+            <li>
+              <MoveList
+                activeClass="active"
+                to="whatwe"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                What we're
+              </MoveList>
+            </li>
+            <li>
+              <MoveList
+                activeClass="active"
+                to="product"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Product
+              </MoveList>
+            </li>
+            <li>
+              <MoveList
+                activeClass="active"
+                to="manual"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Manual
+              </MoveList>
+            </li>
+            <li>
+              <MoveList
+                activeClass="active"
+                to="content"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Content
+              </MoveList>
+            </li>
           </MenuList>
         </MenuBox>
         <SignInContain>
           <SignInBox>
-            <gotoSignIn to="">Sign In</gotoSignIn>
+            <a href="https://console.nexclipper.io">Sign In</a>
           </SignInBox>
         </SignInContain>
       </Navigator>
