@@ -12,7 +12,7 @@ const Container = styled.section`
     width: 1200px;
   }
   @media (max-width: 768px) {
-    width: 100%;
+    width: 95%;
     height: 800px;
     flex-direction: column;
   }
@@ -24,7 +24,7 @@ const IconContainer = styled.div`
   align-items: center;
   width: 50%;
   @media (max-width: 768px) {
-    width: 80%;
+    width: 100%;
   }
 `;
 
@@ -34,11 +34,14 @@ const TextContainer = styled.div`
   align-items: center;
   width: 50%;
   @media (max-width: 768px) {
-    width: 80%;
+    width: 100%;
   }
 `;
 
 const IconBox = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media (max-width: 1440px) {
     width: 1200px;
     img {
