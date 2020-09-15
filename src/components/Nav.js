@@ -151,7 +151,7 @@ export default function Nav() {
               </DocsLink>
             </div>
             <div>
-              <DocsLink>Support</DocsLink>
+              <DocsLink href="https://support@nexclipper.io">Support</DocsLink>
             </div>
             <SignInBox>
               <a href="https://console.nexclipper.io">Sign In</a>
