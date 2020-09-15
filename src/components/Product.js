@@ -12,7 +12,7 @@ const Container = styled.section`
     width: 1200px;
   }
   @media (max-width: 768px) {
-    width: 100%;
+    width: 95%;
     height: 800px;
     flex-direction: column;
   }
@@ -54,6 +54,9 @@ const IconContainer = styled.div`
 `;
 
 const IconBox = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   img {
     height: 450px;
   }
