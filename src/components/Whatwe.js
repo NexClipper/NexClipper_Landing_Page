@@ -24,7 +24,7 @@ const IconContainer = styled.div`
   align-items: center;
   width: 50%;
   @media (max-width: 768px) {
-    width: 100%;
+    width: 80%;
   }
 `;
 
@@ -34,7 +34,7 @@ const TextContainer = styled.div`
   align-items: center;
   width: 50%;
   @media (max-width: 768px) {
-    width: 100%;
+    width: 80%;
   }
 `;
 

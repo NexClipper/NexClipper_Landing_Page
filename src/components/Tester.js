@@ -62,6 +62,11 @@ const LinkBtn = styled.button`
   }
 `;
 
+const GiftText = styled.p`
+  margin-top: 50px;
+  opacity: 0.7;
+`;
+
 export default function Tester() {
   return (
     <Container>
@@ -84,6 +89,10 @@ export default function Tester() {
           <a href="https://forms.gle/n62x1RTLaw7kUYHX8">참가 신청</a>
         </LinkBtn>
       </BtnContainer>
+      <GiftText>
+        * 테스트 기간 동안 사용기 또는 피드백을 전달 해주신 분들을 추첨하여
+        소정의 상품을 발송해 드립니다. 많은 분들의 참여 부탁 드립니다!
+      </GiftText>
     </Container>
   );
 }
