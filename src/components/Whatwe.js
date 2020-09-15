@@ -4,28 +4,53 @@ import k8s from '../Image/k8s.png';
 
 const Container = styled.section`
   display: flex;
-  z-index: 1;
-  width: 100%;
+  width: 1440px;
   height: 700px;
-  position: relative;
+  margin: 0 auto;
   background-color: #fff;
+  @media (max-width: 1440px) {
+    width: 1200px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 800px;
+    flex-direction: column;
+  }
 `;
 
 const IconContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45%;
+  width: 50%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const TextContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 55%;
+  width: 50%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
-const IconBox = styled.div``;
+const IconBox = styled.div`
+  @media (max-width: 1440px) {
+    width: 1200px;
+    img {
+      height: 250px;
+    }
+  }
+  @media (max-width: 768px) {
+    img {
+      height: 200px;
+    }
+  }
+`;
 
 const TextBox = styled.div`
   p {
@@ -36,12 +61,19 @@ const TextBox = styled.div`
     font-size: 20px;
     font-weight: bold;
   }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Title = styled.div`
   font-size: 35px;
   font-weight: bold;
   margin-bottom: 20px;
+  @media (max-width: 768px) {
+    width: 100%;
+    font-size: 25px;
+  }
 `;
 
 export default function Whatwe({ id }) {

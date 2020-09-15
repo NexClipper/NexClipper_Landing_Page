@@ -4,11 +4,18 @@ import productImg from '../Image/productImg.png';
 
 const Container = styled.section`
   display: flex;
-  width: 100%;
+  width: 1440px;
   height: 700px;
-  z-index: 1;
-  position: relative;
+  margin: 0 auto;
   background-color: #fff;
+  @media (max-width: 1440px) {
+    width: 1200px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 800px;
+    flex-direction: column;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -16,6 +23,9 @@ const TextContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 50%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const TextBox = styled.div`
@@ -27,6 +37,9 @@ const TextBox = styled.div`
     font-size: 20px;
     font-weight: bold;
   }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const IconContainer = styled.div`
@@ -34,11 +47,27 @@ const IconContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 50%;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-top: 10px;
+  }
 `;
 
 const IconBox = styled.div`
   img {
     height: 450px;
+  }
+  @media (max-width: 1440px) {
+    width: 1200px;
+    img {
+      height: 400px;
+    }
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    img {
+      height: 350px;
+    }
   }
 `;
 
@@ -46,6 +75,9 @@ const Title = styled.div`
   font-size: 35px;
   font-weight: bold;
   margin-bottom: 20px;
+  @media (max-width: 768px) {
+    font-size: 25px;
+  }
 `;
 
 export default function Product({ id }) {

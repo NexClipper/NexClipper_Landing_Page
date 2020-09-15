@@ -3,11 +3,19 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 import styled from 'styled-components';
 import NexLogo from '../Image/NexLogo.png';
 
-const Header = styled.header`
-  position: fixed;
+const Header = styled.section`
+  position: sticky;
+  top: 0;
   z-index: 2;
-  width: 100%;
+  width: 1440px;
   height: 50px;
+  margin: 0 auto;
+  @media (max-width: 1440px) {
+    width: 1200px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Navigator = styled.nav`
@@ -17,18 +25,26 @@ const Navigator = styled.nav`
   width: 100%;
   height: 100%;
   background: linear-gradient(to right, #000033, #000066, #000033);
+  @media (max-width: 1440px) {
+    width: 1200px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 `;
 
 const LogoContainer = styled.div`
-  width: 300px;
   height: 100%;
+  margin-left: 40px;
 `;
 
 const LogoBox = styled.div`
-  width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   img {
     cursor: pointer;
@@ -38,14 +54,26 @@ const LogoBox = styled.div`
 const MenuBox = styled.div`
   width: 500px;
   height: 100%;
-  margin-right: 11%;
+  margin-right: 50px;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-left: 75px;
+  }
 `;
 
-const MenuList = styled.ul`
+const MenuList = styled.div`
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    div {
+      margin: 5px 0 5px 0;
+    }
+  }
 `;
 
 const MoveList = styled(Link)`
@@ -55,11 +83,11 @@ const MoveList = styled(Link)`
   font-weight: 500;
 `;
 
-const SignInContain = styled.div`
-  display: flex;
-  align-items: center;
-  width: 150px;
-  height: 100%;
+const DocsLink = styled.a`
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
 `;
 
 const SignInBox = styled.div`
@@ -93,7 +121,7 @@ export default function Nav() {
         </LogoContainer>
         <MenuBox>
           <MenuList>
-            <li>
+            <div>
               <MoveList
                 activeClass="active"
                 to="whatwe"
@@ -102,10 +130,10 @@ export default function Nav() {
                 offset={-70}
                 duration={500}
               >
-                What we're
+                NexClipper?
               </MoveList>
-            </li>
-            <li>
+            </div>
+            <div>
               <MoveList
                 activeClass="active"
                 to="product"
@@ -116,38 +144,20 @@ export default function Nav() {
               >
                 Product
               </MoveList>
-            </li>
-            <li>
-              <MoveList
-                activeClass="active"
-                to="manual"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Manual
-              </MoveList>
-            </li>
-            <li>
-              <MoveList
-                activeClass="active"
-                to="content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Content
-              </MoveList>
-            </li>
+            </div>
+            <div>
+              <DocsLink href="https://nexclipper.github.io/docs/">
+                Docs
+              </DocsLink>
+            </div>
+            <div>
+              <DocsLink>Support</DocsLink>
+            </div>
+            <SignInBox>
+              <a href="https://console.nexclipper.io">Sign In</a>
+            </SignInBox>
           </MenuList>
         </MenuBox>
-        <SignInContain>
-          <SignInBox>
-            <a href="https://console.nexclipper.io">Sign In</a>
-          </SignInBox>
-        </SignInContain>
       </Navigator>
     </Header>
   );

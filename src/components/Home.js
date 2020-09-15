@@ -3,12 +3,18 @@ import styled from 'styled-components';
 import top_img from '../Image/top_img.png';
 
 const Container = styled.section`
-  position: sticky;
-  z-index: 0;
   background-color: #000033;
-  width: 100%;
+  width: 1440px;
   height: 750px;
-  top: 50px;
+  margin: 0 auto;
+  @media (max-width: 1440px) {
+    width: 1200px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 450px;
+    margin-top: 150px;
+  }
 `;
 
 const TextContent = styled.div``;
@@ -28,17 +34,28 @@ const ImgContent = styled.div`
   img {
     height: 550px;
   }
+  @media (max-width: 768px) {
+    img {
+      height: 300px;
+    }
+  }
 `;
 
 const MainText = styled.p`
   color: #fff;
   font-size: 30px;
   margin-bottom: 15px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 const SubText = styled.p`
   color: #fff;
   font-size: 20px;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
 `;
 
 export default function Home() {
