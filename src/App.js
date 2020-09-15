@@ -5,6 +5,7 @@ import Product from './components/Product';
 import Whatwe from './components/Whatwe';
 import Nav from './components/Nav';
 import { Helmet } from 'react-helmet';
+import Tester from './components/Tester';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Home />
       <Whatwe id="whatwe" />
       <Product id="product" />
+      <Tester />
     </div>
   );
 }
