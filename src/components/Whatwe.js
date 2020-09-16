@@ -8,7 +8,6 @@ const Container = styled.section`
   height: 700px;
   margin: 0 auto;
   background-color: #fff;
-  padding: 15px;
   @media (max-width: 1440px) {
     width: 1200px;
   }
@@ -69,6 +68,7 @@ const TextBox = styled.div`
   }
   @media (max-width: 768px) {
     width: 100%;
+    margin-top: 40px;
     padding: 0 30px 0 10px;
   }
 `;

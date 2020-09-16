@@ -42,6 +42,7 @@ const TextBox = styled.div`
   }
   @media (max-width: 768px) {
     width: 100%;
+    margin-top: 40px;
     padding: 0 30px 0 10px;
   }
 `;
