@@ -14,8 +14,7 @@ const Container = styled.section`
   }
   @media (max-width: 768px) {
     width: 95%;
-    height: 800px;
-    margin-top: 50px;
+    height: 900px;
     flex-direction: column;
   }
 `;
