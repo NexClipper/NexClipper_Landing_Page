@@ -31,6 +31,7 @@ const Navigator = styled.nav`
   @media (max-width: 768px) {
     width: 100%;
     height: 200px;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -40,6 +41,9 @@ const Navigator = styled.nav`
 const LogoContainer = styled.div`
   height: 100%;
   margin-left: 40px;
+  @media (max-width: 768px) {
+    height: 45px;
+  }
 `;
 
 const LogoBox = styled.div`
@@ -68,11 +72,8 @@ const MenuList = styled.div`
   align-items: center;
   @media (max-width: 768px) {
     width: 100%;
-    height: 100%;
+    height: 90%;
     flex-direction: column;
-    div {
-      margin: 5px 0 5px 0;
-    }
   }
 `;
 
