@@ -9,6 +9,7 @@ const Container = styled.section`
   width: 1440px;
   height: 500px;
   margin: 0 auto;
+  padding: 20px;
   background-color: #fff;
   @media (max-width: 1440px) {
     width: 1200px;
