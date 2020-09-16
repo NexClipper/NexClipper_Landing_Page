@@ -15,6 +15,7 @@ const Container = styled.section`
   @media (max-width: 768px) {
     width: 95%;
     height: 900px;
+    margin-top: 50px;
     flex-direction: column;
   }
 `;
