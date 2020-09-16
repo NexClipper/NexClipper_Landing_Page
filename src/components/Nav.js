@@ -55,7 +55,7 @@ const LogoBox = styled.div`
     cursor: pointer;
   }
   @media (max-width: 768px) {
-    height: 30px;
+    height: 35px;
   }
 `;
 
@@ -151,15 +151,15 @@ export default function Nav() {
               </MoveList>
             </div>
             <div>
-              <DocsLink href="https://nexclipper.github.io/docs/">
+              <DocsLink href="https://nexclipper.github.io/docs/" target="_blank">
                 Docs
               </DocsLink>
             </div>
             <div>
-              <DocsLink href="https://support@nexclipper.io">Support</DocsLink>
+              <DocsLink href="https://support@nexclipper.io" target="_blank">Support</DocsLink>
             </div>
             <SignInBox>
-              <a href="https://console.nexclipper.io">Sign In</a>
+              <a href="https://console.nexclipper.io" target="_blank">Sign In</a>
             </SignInBox>
           </MenuList>
         </MenuBox>

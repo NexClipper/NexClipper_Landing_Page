@@ -32,7 +32,6 @@ const TextContainer = styled.div`
 `;
 
 const TextBox = styled.div`
-  padding: 0 10px 0 10px;
   p {
     padding-bottom: 5px;
     font-size: 15px;
@@ -43,6 +42,7 @@ const TextBox = styled.div`
   }
   @media (max-width: 768px) {
     width: 100%;
+    padding: 0 30px 0 10px;
   }
 `;
 
