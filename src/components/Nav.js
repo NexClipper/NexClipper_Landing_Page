@@ -50,8 +50,12 @@ const LogoBox = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   img {
     cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    height: 30px;
   }
 `;
 

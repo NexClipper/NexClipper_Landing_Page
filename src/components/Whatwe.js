@@ -26,6 +26,7 @@ const IconContainer = styled.div`
   width: 50%;
   @media (max-width: 768px) {
     width: 100%;
+    height: 40%;
   }
 `;
 
@@ -36,6 +37,7 @@ const TextContainer = styled.div`
   width: 50%;
   @media (max-width: 768px) {
     width: 100%;
+    height: 60%;
   }
 `;
 
@@ -51,7 +53,7 @@ const IconBox = styled.div`
   }
   @media (max-width: 768px) {
     img {
-      height: 200px;
+      height: 150px;
     }
   }
 `;
