@@ -24,7 +24,7 @@ jobs:
         run: yarn install --prod --pure-lockfile
 
       - name: Build
-        run: yarn run build
+        run: yarn build
         env:
           NODE_ENV: production
           
