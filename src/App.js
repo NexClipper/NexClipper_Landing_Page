@@ -11,11 +11,7 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-        <meta
-          name="description"
-          content="service.nexclipper"
-          data-react-helmet="true"
-        />
+        <meta property="og:title" content="service.nexclipper" />
         <title>NexClipper | Service</title>
       </Helmet>
       <GlobalStyles />
