@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-        <meta property="og:title" content="service.nexclipper" />
         <title>NexClipper | Service</title>
       </Helmet>
       <GlobalStyles />
