@@ -11,6 +11,11 @@ function App() {
   return (
     <div className="App">
       <Helmet>
+        <meta
+          name="description"
+          content="service.nexclipper"
+          data-react-helmet="true"
+        />
         <title>NexClipper | Service</title>
       </Helmet>
       <GlobalStyles />
