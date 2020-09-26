@@ -4,15 +4,11 @@ import Home from './components/Home';
 import Product from './components/Product';
 import Whatwe from './components/Whatwe';
 import Nav from './components/Nav';
-import { Helmet } from 'react-helmet';
 import Tester from './components/Tester';
 
 function App() {
   return (
     <div className="App">
-      <Helmet>
-        <title>NexClipper | Service</title>
-      </Helmet>
       <GlobalStyles />
       <Nav />
       <Home />
